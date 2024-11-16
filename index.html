@@ -9,50 +9,18 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-    <title>Pintura SAC</title>
-    <style>
-      body {
-        /* background: #f4f6f5; */
-        color: #254d4d;
-      }
-      section {
-        padding-block: 4rem;
-      }
-      h1 {
-        font-size: 4rem;
-        font-weight: 700;
-      }
-      h2 {
-        font-size: 2.5rem;
-        font-weight: 600;
-      }
-      h4 {
-        font-size: 1.5rem;
-        font-weight: 600;
-      }
-      .sombra {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        background: rgba(0, 0, 0, 0.4);
-        color: #fff;
-        inset: 0;
-        font-weight: 700;
-        font-size: 1.75rem;
-        opacity: 0;
-        transition: 0.3s;
-      }
-      .sombra:hover {
-        opacity: 1;
-      }
-    </style>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>ProPaint Solutions</title>
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg bg shadow">
+      <nav class="navbar navbar-expand-lg bg-light shadow fixed-top">
         <div class="container">
-          <a class="navbar-brand" href="#">Navbar</a>
+          <a class="navbar-brand" href="/">ProPaint Solutions</a>
           <button
             class="navbar-toggler"
             type="button"
@@ -67,26 +35,24 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-4">
               <li class="nav-item">
-                <a class="nav-link fw-semibold" href="#">Home</a>
+                <a class="nav-link fw-semibold" href="/">Inicio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link fw-semibold" href="#">Services</a>
+                <a class="nav-link fw-semibold" href="#servicios">Servicios</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link fw-semibold" href="#">Products </a>
+                <a class="nav-link fw-semibold" href="#productos">Productos </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link fw-semibold" href="#">About</a>
+                <a class="nav-link fw-semibold" href="#nosotros">Nosotros</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link fw-semibold" href="#">Contact</a>
+                <a class="nav-link fw-semibold" href="#contactos">Contactos</a>
               </li>
-              <div class="d-flex">
-                <button type="button" class="btn btn-warning">
-                  Iniciar Sesion
-                </button>
-              </div>
             </ul>
+            <button type="button" class="btn bg-dark text-white fw-semibold">
+              Iniciar Sesion
+            </button>
           </div>
         </div>
       </nav>
@@ -110,7 +76,7 @@
       </div>
     </section>
 
-    <section>
+    <section id="servicios">
       <div class="container">
         <h4 class="text-center mb-0">NUESTROS MEJORES</h4>
         <h2 class="text-center fw-bold">SERVICIOS</h2>
@@ -169,6 +135,52 @@
 
     <section>
       <div class="container">
+        <h4 class="text-center">ÚLTIMAS NOTICIAS DE</h4>
+        <h2 class="text-center">NUESTRO PINTOR Y EMPRESA</h2>
+        <div class="row justify-content-center gap-4 mt-5">
+          <div class="col-5">
+            <h5>Innovación en Revestimientos</h5>
+            <p>
+              Revolucionamos el revestimiento de fibracemento con técnicas
+              modernas, garantizando durabilidad, estética y sostenibilidad.
+              Nuestros métodos avanzados aseguran acabados impecables,
+              resistentes a climas extremos, y con un menor impacto ambiental.
+              ¡Calidad que transforma!
+            </p>
+          </div>
+          <div class="col-5">
+            <h5>Pinturas Duraderas</h5>
+            <p>
+              Nuestras pinturas están diseñadas para resistir el paso del tiempo
+              y las condiciones más extremas. Ofrecen máxima protección, colores
+              vibrantes y un acabado impecable, garantizando calidad y larga
+              duración en cada aplicación. ¡Pinta con confianza!
+            </p>
+          </div>
+          <div class="col-5">
+            <h5>Mantenimiento Especializado</h5>
+            <p>
+              Ofrecemos servicios premium para el cuidado y renovación de
+              revestimientos de fibracemento y tablas. Garantizamos protección,
+              estética y durabilidad con soluciones adaptadas a cada necesidad.
+              ¡Preserva la calidad de tus espacios!
+            </p>
+          </div>
+          <div class="col-5">
+            <h5>Casos de Éxito</h5>
+            <p>
+              Conoce nuestros proyectos destacados, donde combinamos experiencia
+              y calidad para transformar espacios. Resultados que hablan por sí
+              mismos, respaldados por clientes satisfechos. ¡Déjanos hacer
+              realidad tu próximo gran proyecto!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="nosotros">
+      <div class="container">
         <div class="row justify-content-center align-items-center gap-4">
           <div class="col-lg-5">
             <img
@@ -177,19 +189,158 @@
               alt=""
             />
           </div>
-          <div class="col-lg-4">
+          <div class="col-lg-5">
             <h4 class="mb-0">SABER MÁS</h4>
             <h2 class="fw-bold">SOBRE NOSOTROS</h2>
             <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit
-              aperiam eum earum quam expedita magni, tempora nam autem veniam
-              harum enim in atque consequuntur aut, possimus at! Rem, vitae
-              natus.
+              Somos una empresa dedicada a ofrecer soluciones en pinturas,
+              revestimientos y mantenimiento especializado. Con experiencia,
+              innovación y compromiso, transformamos espacios, garantizando
+              calidad y satisfacción en cada proyecto. ¡Conócenos y descubre
+              todo lo que podemos hacer por ti!
             </p>
           </div>
         </div>
       </div>
     </section>
+
+    <section style="background-color: #f4f6f5" id="contactos">
+      <div class="container">
+        <div class="row justify-content-center align-items-center">
+          <div class="col-5">
+            <h4 class="mb-0">SIÉNTETE LIBRE DE</h4>
+            <h2 class="fw-bold">VISITARNOS</h2>
+            <h5 class="my-5">Dirección:</h5>
+            <p class="mb-0 fs-5">Jirón Manco Segundo 2350</p>
+            <p class="mb-0 fs-5">Lince, 15073</p>
+            <p class="mb-0 fs-5">Email: propaint@gmail.com</p>
+            <p class="mb-0 fs-5">Phone: +51-123-456-987</p>
+          </div>
+          <div class="col-5">
+            <form class="form shadow">
+              <h4 class="mb-0">¿TIENE ALGUNA CONSULTA?</h4>
+              <h2 class="fw-bold">ESCRIBANOS AQUÍ</h2>
+              <div class="form-floating mb-3 mt-4">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="floatingPassword"
+                  placeholder="Password"
+                />
+                <label for="floatingPassword">Nombre</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input
+                  type="email"
+                  class="form-control"
+                  id="floatingInput"
+                  placeholder="name@example.com"
+                />
+                <label for="floatingInput">Correo Electronico</label>
+              </div>
+              <div class="form-floating mb-3">
+                <textarea
+                  class="form-control"
+                  placeholder="Leave a comment here"
+                  id="floatingTextarea2"
+                  style="height: 100px"
+                ></textarea>
+                <label for="floatingTextarea2">Comentario</label>
+              </div>
+              <div class="d-flex justify-content-end">
+                <input
+                  class="btn bg-dark text-white"
+                  type="submit"
+                  value="Enviar"
+                />
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="d-flex flex-column gap-3">
+          <h2 class="text-center fw-bold">
+            ÚNETE Y ENTÉRATE DE NUESTRAS <br />
+            PROMOCIONES Y DESCUENTOS
+          </h2>
+          <p class="text-center text-body-tertiary">
+            Escribe tu correo electrónico a continuación y sé uno de nosotros.
+          </p>
+
+          <div class="input-group mx-auto w-50">
+            <input
+              type="text"
+              class="form-control"
+              style="border-radius: 10px; padding: 0.75rem"
+              placeholder="Añade tu correo electrónico aquí"
+              aria-label="Añade tu correo electrónico aquí"
+              aria-describedby="button-addon2"
+            />
+            <button
+              class="btn bg-black text-white"
+              type="button"
+              id="button-addon2"
+            >
+              Enviar
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-black text-white pt-5 pb-3">
+      <div class="container">
+        <div class="d-flex flex-column">
+          <div class="d-flex justify-content-center gap-4">
+            <a class="text-decoration-none fs-3 text-white" href="#"
+              ><i class="ri-facebook-fill"></i
+            ></a>
+            <a class="text-decoration-none fs-3 text-white" href="#"
+              ><i class="ri-instagram-line"></i
+            ></a>
+            <a class="text-decoration-none fs-3 text-white" href="#"
+              ><i class="ri-tiktok-fill"></i
+            ></a>
+            <a class="text-decoration-none fs-3 text-white" href="#"
+              ><i class="ri-twitter-x-line"></i
+            ></a>
+          </div>
+          <ul class="d-flex justify-content-center gap-4 mt-5">
+            <li class="list-inline-item">
+              <a class="text-decoration-none text-white" href="/">INICIO</a>
+            </li>
+            <li class="list-inline-item">
+              <a class="text-decoration-none text-white" href="#servicios"
+                >SERVICIOS</a
+              >
+            </li>
+            <li class="list-inline-item">
+              <a class="text-decoration-none text-white" href="#servicios"
+                >PRODUCTOS</a
+              >
+            </li>
+            <li class="list-inline-item">
+              <a class="text-decoration-none text-white" href="#nosotros"
+                >NOSOTROS</a
+              >
+            </li>
+            <li class="list-inline-item">
+              <a class="text-decoration-none text-white" href="#contactos"
+                >CONTACTOS</a
+              >
+            </li>
+          </ul>
+        </div>
+        <hr />
+        <p class="text-center pt-3 text-secondary">
+          Copyright © 2024 ISIL | All rights reserved
+        </p>
+      </div>
+    </footer>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"

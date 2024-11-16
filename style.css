@@ -1,0 +1,58 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* background: #f4f6f5; */
+  color: #254d4d;
+}
+section {
+  padding-block: 4rem;
+}
+h1 {
+  font-size: 4rem;
+  font-weight: 700;
+}
+h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+h4 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.sombra {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  inset: 0;
+  font-weight: 700;
+  font-size: 1.75rem;
+  opacity: 0;
+  transition: 0.3s;
+}
+.sombra:hover {
+  opacity: 1;
+}
+
+.form {
+  background-color: #fff;
+  padding: 3rem;
+  border-radius: 50px;
+}
+
+.form-control {
+  background-color: #f4f6f5;
+  border-radius: 30px;
+  border: none;
+}
+.form-floating > .form-control,
+.form-floating > .form-control-plaintext {
+  padding: 1rem 1.75rem;
+}
+
+.form-floating > label {
+  padding: 1rem 1.75rem;
+}
