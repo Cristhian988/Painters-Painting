@@ -2,7 +2,6 @@ body {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  /* background: #f4f6f5; */
   color: #254d4d;
 }
 section {
@@ -20,6 +19,18 @@ h4 {
   font-size: 1.5rem;
   font-weight: 600;
 }
+
+@media (min-width: 425px) {
+  h1 {
+    font-size: 3rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  h4 {
+    font-size: 1.25rem;
+  }
+}
 .sombra {
   display: flex;
   justify-content: center;
@@ -31,6 +42,7 @@ h4 {
   font-weight: 700;
   font-size: 1.75rem;
   opacity: 0;
+  z-index: 99;
   transition: 0.3s;
 }
 .sombra:hover {
@@ -55,4 +67,48 @@ h4 {
 
 .form-floating > label {
   padding: 1rem 1.75rem;
+}
+
+.product1::before,
+.product2::before,
+.product3::before,
+.product4::before,
+.product5::before,
+.product6::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  transition: 0.3s;
+}
+.product1::before {
+  background-color: rgba(255, 83, 83, 0.75);
+}
+.product2::before {
+  background-color: rgba(0, 199, 94, 0.65);
+}
+.product3::before {
+  background-color: rgba(255, 94, 181, 0.65);
+}
+.product4::before {
+  background-color: rgba(44, 107, 211, 0.65);
+}
+.product5::before {
+  background-color: rgba(255, 170, 19, 0.65);
+}
+.nomProduct {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  inset: 0;
+  font-weight: 700;
+  font-size: 1.75rem;
+  z-index: 10;
+  transition: 0.3s;
+  cursor: pointer;
 }
