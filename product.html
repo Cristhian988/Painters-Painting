@@ -8,13 +8,12 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="styleCarts.css">
     <title>Productos</title>
 </head>
 
-<body class="">
-    <!-- SECTION HEADER -->
-    <header>
+<body>
+<!-- SECTION HEADER -->
+<header>
         <nav class="navbar navbar-expand-lg bg-light shadow fixed-top">
             <div class="container">
                 <a class="navbar-brand" href="/">ProPaint Solutions</a>
@@ -45,7 +44,7 @@
                         <div class="position-relative">
                             <a href="#" class="text-decoration-none fs-3 text-black" id="cart-icon"><i
                                     class="ri-shopping-cart-2-line"></i></a>
-                            <span class="count">0</span>
+                            <!-- <span class="count">0</span> -->
                         </div>
                         <button type="button" class="btn bg-dark text-white fw-semibold" data-bs-toggle="modal"
                             data-bs-target="#mi-modal">
@@ -55,10 +54,10 @@
                 </div>
             </div>
         </nav>
-    </header>
+</header>
 
-    <!-- SECTION PRODUCTOS -->
-    <section id="productos">
+<!-- SECTION PRODUCTOS -->
+<section id="productos">
         <div class="container">
             <h4 class="text-center mb-0 mt-4">LOS MEJORES</h4>
             <h2 class="text-center fw-bold">PRODUCTOS</h2>
@@ -135,522 +134,323 @@
 
             </div>
         </div>
-    </section>
+</section>
 
-    <!-- MODAL CARD LATEX-->
-    <div class="modal" id="bases-latex">
-        <div class="modal-dialog modal-xl ">
-            <div class="modal-content">
-                <div class="modal-header px-4">
-                    <h2 class="modal-title ">BASES LATEX</h2>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+    <!-- MODAL CARD BASES-->
+<div class="modal" tabindex="-1" id="bases-latex">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+      <div class="modal-header px-4">
+        <h5 class="modal-title">BASES LATEX</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 col-lg-3 mb-3 mb-lg-0">
+                    <div class="card border border-secondary py-2">
+                        <img src="assets/imprimante.png" alt="">
+                        <div class="card-body text-center">
+                            <h4>IMPRIMANTE</h4>
+                            <p>Cubre porosidades y blanquea paredes nuevas.</p>
+                            <p class="fw-bold fs-5">S/ 58.90</p>
+                            <button type="button" class="btn bg-dark text-white fw-bold">Agregar</button>
+                        </div>
+                    </div>
                 </div>
-                <div class="modal-body py-4 px-2 px-lg-5">
-                    <div class="container">
-                        <div class="row">
-<<<<<<< HEAD
-                            <div class="col-6 col-lg-3 mb-3 mb-lg-0">
-                                <div class="card">
-=======
-                            <div class="col-3">
-                                <div class="card border border-secondary py-2">
->>>>>>> 6caf94dc6ef3d1fd52c8cf8c96bb28bc7dc83b69
-                                    <img src="assets/imprimante.png" class="card-img-top position-relative" alt="..." />
-                                    <div class="card-body text-center">
-                                        <h4>IMPRIMANTE</h4>
-                                        <p>Cubre porosidades y blanquea paredes nuevas.</p>
-<<<<<<< HEAD
-                                        <p class="fw-bold fs-5">S/ 58.90</p>
-                                        <button type="button"
-                                            class="btn bg-dark text-white fw-bold icon-cart">Agregar</button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-6 col-lg-3 mb-3 mb-lg-0">
-                                <div class="card">
-=======
-                                        <a href="#" class="border border-black text-decoration-none py-1 px-2 text-black rounded">Precio: S/ 58.90</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-3">
-                                <div class="card border border-secondary py-2">
->>>>>>> 6caf94dc6ef3d1fd52c8cf8c96bb28bc7dc83b69
-                                    <img src="assets/pasta.png" class="card-img-top position-relative" alt="..." />
-                                    <div class="card-body text-center">
-                                        <h4>PASTA FINA</h4>
-                                        <p>Rellena y empasta superficies de concreto.</p>
-<<<<<<< HEAD
-                                        <p class="fw-bold fs-5">S/ 58.90</p>
-                                        <button type="button" class="btn bg-dark text-white fw-bold">Agregar</button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-6 col-lg-3">
-                                <div class="card">
-=======
-                                        <a href="#" class="border border-black text-decoration-none py-1 px-2 text-black rounded">Precio: S/ 100</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-3">
-                                <div class="card border border-secondary py-2">
->>>>>>> 6caf94dc6ef3d1fd52c8cf8c96bb28bc7dc83b69
-                                    <img src="assets/sellador.png" class="card-img-top position-relative" alt="..." />
-                                    <div class="card-body text-center">
-                                        <h4>SELLADOR</h4>
-                                        <p>Promueve la adherencia entre las capas del pintado.</p>
-<<<<<<< HEAD
-                                        <p class="fw-bold fs-5">S/ 58.90</p>
-                                        <button type="button" class="btn bg-dark text-white fw-bold">Agregar</button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-6 col-lg-3">
-                                <div class="card">
-=======
-                                        <a href="#" class="border border-black text-decoration-none py-1 px-2 text-black rounded">Precio: S/ 24</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-3">
-                                <div class="card border border-secondary py-2">
->>>>>>> 6caf94dc6ef3d1fd52c8cf8c96bb28bc7dc83b69
-                                    <img src="assets/temple.png" class="card-img-top position-relative" alt="..." />
-                                    <div class="card-body text-center">
-                                        <h4>TEMPLE</h4>
-                                        <p>Empasta, e imprima dejando superficies limpias.</p>
-<<<<<<< HEAD
-                                        <p class="fw-bold fs-5">S/ 58.90</p>
-                                        <button type="button" class="btn bg-dark text-white fw-bold">Agregar</button>
-=======
-                                        <a href="#" class="border border-black text-decoration-none py-1 px-2 text-black rounded">Precio: S/ 20</a>
->>>>>>> 6caf94dc6ef3d1fd52c8cf8c96bb28bc7dc83b69
-                                    </div>
-                                </div>
-                            </div>
+                <div class="col-6 col-lg-3 mb-3 mb-lg-0">
+                    <div class="card border border-secondary py-2">
+                        <img src="assets/pasta.png" alt="">
+                        <div class="card-body text-center">
+                            <h4>PASTA FINA</h4>
+                            <p>Rellena y empasta superficies de concreto.</p>
+                            <p class="fw-bold fs-5">S/ 58.90</p>
+                            <button type="button" class="btn bg-dark text-white fw-bold">Agregar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3 mb-3 mb-lg-0">
+                    <div class="card border border-secondary py-2">
+                        <img src="assets/sellador.png" alt="">
+                        <div class="card-body text-center">
+                            <h4>SELLADOR</h4>
+                            <p>Promueve la adherencia entre las capas del pintado.</p>
+                            <p class="fw-bold fs-5">S/ 58.90</p>
+                            <button type="button" class="btn bg-dark text-white fw-bold">Agregar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3 mb-3 mb-lg-0">
+                    <div class="card border border-secondary py-2">
+                        <img src="assets/temple.png" alt="">
+                        <div class="card-body text-center">
+                            <h4>TEMPLE</h4>
+                            <p>Empasta, e imprima dejando superficies limpias.</p>
+                            <p class="fw-bold fs-5">S/ 58.90</p>
+                            <button type="button" class="btn bg-dark text-white fw-bold">Agregar</button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+      </div>
     </div>
+  </div>
+</div> 
 
-    <!-- MODAL CARD PINTURA-->
-    <div class="modal" id="pintura-latex">
-        <div class="modal-dialog modal-xl ">
-            <div class="modal-content">
-                <div class="modal-header px-4">
-                    <h2 class="modal-title ">PINTURA LATEX</h2>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+       <!-- MODAL CARD PINTURA-->
+<div class="modal" tabindex="-1" id="pintura-latex">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+      <div class="modal-header px-4">
+        <h5 class="modal-title">PINTURA LATEX</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 col-lg-3 mb-3 mb-lg-0">
+                    <div class="card border border-secondary py-2">
+                        <img src="assets/satinado.png" alt="">
+                        <div class="card-body text-center">
+                            <h4>SATINADO</h4>
+                            <p>Pintura de acabado brillante con un acabado terso.</p>
+                            <p class="fw-bold fs-5">S/ 58.90</p>
+                            <button type="button" class="btn bg-dark text-white fw-bold">Agregar</button>
+                        </div>
+                    </div>
                 </div>
-                <div class="modal-body py-4 px-2 px-lg-5">
-                    <div class="container">
-                        <div class="row">
-<<<<<<< HEAD
-                            <div class="col-6 col-lg-3 mb-3 mb-lg-0">
-                                <div class="card">
-=======
-                            <div class="col-3">
-                                <div class="card border border-secondary py-2">
->>>>>>> 6caf94dc6ef3d1fd52c8cf8c96bb28bc7dc83b69
-                                    <img src="assets/satinado.png" class="card-img-top position-relative" alt="..." />
-                                    <div class="card-body text-center">
-                                        <h4>SATINADO</h4>
-                                        <p>Pintura de acabado brillante con un acabado terso.</p>
-<<<<<<< HEAD
-                                        <p class="fw-bold fs-5">S/ 58.90</p>
-                                        <button type="button" class="btn bg-dark text-white fw-bold">Agregar</button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-6 col-lg-3 mb-3 mb-lg-0">
-                                <div class="card">
-=======
-                                        <a href="#" class="border border-black text-decoration-none py-1 px-2 text-black rounded">Precio: S/ 90</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-3">
-                                <div class="card border border-secondary py-2">
->>>>>>> 6caf94dc6ef3d1fd52c8cf8c96bb28bc7dc83b69
-                                    <img src="assets/duralatex.png" class="card-img-top position-relative" alt="..." />
-                                    <div class="card-body text-center">
-                                        <h4>DURALATEX</h4>
-                                        <p>Pintura de acabado mate con una óptima resistencia.</p>
-<<<<<<< HEAD
-                                        <p class="fw-bold fs-5">S/ 58.90</p>
-                                        <button type="button" class="btn bg-dark text-white fw-bold">Agregar</button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-6 col-lg-3">
-                                <div class="card">
-=======
-                                        <a href="#" class="border border-black text-decoration-none py-1 px-2 text-black rounded">Precio: S/ 70</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-3">
-                                <div class="card border border-secondary py-2">
->>>>>>> 6caf94dc6ef3d1fd52c8cf8c96bb28bc7dc83b69
-                                    <img src="assets/pato.png" class="card-img-top position-relative" alt="..." />
-                                    <div class="card-body text-center">
-                                        <h4>PATO</h4>
-                                        <p>Pintura de acabado mate con un buen rendimiento.</p>
-<<<<<<< HEAD
-                                        <p class="fw-bold fs-5">S/ 58.90</p>
-                                        <button type="button" class="btn bg-dark text-white fw-bold">Agregar</button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-6 col-lg-3">
-                                <div class="card">
-=======
-                                        <a href="#" class="border border-black text-decoration-none py-1 px-2 text-black rounded">Precio: S/ 60</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-3">
-                                <div class="card border border-secondary py-2">
->>>>>>> 6caf94dc6ef3d1fd52c8cf8c96bb28bc7dc83b69
-                                    <img src="assets/patoplus.png" class="card-img-top position-relative" alt="..." />
-                                    <div class="card-body text-center">
-                                        <h4>PATOPLUS</h4>
-                                        <p>Más poder cubriente, más blancura.</p>
-<<<<<<< HEAD
-                                        <p class="fw-bold fs-5">S/ 58.90</p>
-                                        <button type="button" class="btn bg-dark text-white fw-bold">Agregar</button>
-=======
-                                        <a href="#" class="border border-black text-decoration-none py-1 px-2 text-black rounded">Precio: S/ 65</a>
->>>>>>> 6caf94dc6ef3d1fd52c8cf8c96bb28bc7dc83b69
-                                    </div>
-                                </div>
-                            </div>
+                <div class="col-6 col-lg-3 mb-3 mb-lg-0">
+                    <div class="card border border-secondary py-2">
+                        <img src="assets/duralatex.png" alt="">
+                        <div class="card-body text-center">
+                            <h4>DURALATEX</h4>
+                            <p>Pintura de acabado mate con una óptima resistencia.</p>
+                            <p class="fw-bold fs-5">S/ 58.90</p>
+                            <button type="button" class="btn bg-dark text-white fw-bold">Agregar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3 mb-3 mb-lg-0">
+                    <div class="card border border-secondary py-2">
+                        <img src="assets/pato.png" alt="">
+                        <div class="card-body text-center">
+                            <h4>PATO</h4>
+                            <p>Pintura de acabado mate con un buen rendimiento.</p>
+                            <p class="fw-bold fs-5">S/ 58.90</p>
+                            <button type="button" class="btn bg-dark text-white fw-bold">Agregar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3 mb-3 mb-lg-0">
+                    <div class="card border border-secondary py-2">
+                        <img src="assets/patoplus.png" alt="">
+                        <div class="card-body text-center">
+                            <h4>PATOPLUS</h4>
+                            <p>Más poder cubriente, más blancura.</p>
+                            <p class="fw-bold fs-5">S/ 58.90</p>
+                            <button type="button" class="btn bg-dark text-white fw-bold">Agregar</button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+      </div>
     </div>
+  </div>
+</div> 
 
-    <!-- MODAL CARD ESMALTES-->
-    <div class="modal" id="esmaltes">
-        <div class="modal-dialog modal-xl ">
-            <div class="modal-content">
-                <div class="modal-header px-4">
-                    <h2 class="modal-title ">ESMALTES Y BASES SOLVENTES</h2>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+       <!-- MODAL CARD ESMALTE-->
+<div class="modal" tabindex="-1" id="esmaltes">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+      <div class="modal-header px-4">
+        <h5 class="modal-title">ESMALTES Y BASES SOLVENTES</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 col-lg-3 mb-3 mb-lg-0">
+                    <div class="card border border-secondary py-2">
+                        <img src="assets/esmaltepintor.png" alt="">
+                        <div class="card-body text-center">
+                            <h4>ESMALTE PINTOR</h4>
+                            <p>Resistente con buen acabado y nivelación y alto brillo.</p>
+                            <p class="fw-bold fs-5">S/ 58.90</p>
+                            <button type="button" class="btn bg-dark text-white fw-bold">Agregar</button>
+                        </div>
+                    </div>
                 </div>
-                <div class="modal-body py-4 px-2 px-lg-5">
-                    <div class="container">
-                        <div class="row">
-<<<<<<< HEAD
-                            <div class="col-6 col-lg-3 mb-3 mb-lg-0">
-                                <div class="card">
-=======
-                            <div class="col-3">
-                                <div class="card border border-secondary py-2">
->>>>>>> 6caf94dc6ef3d1fd52c8cf8c96bb28bc7dc83b69
-                                    <img src="assets/esmaltepintor.png" class="card-img-top position-relative"
-                                        alt="..." />
-                                    <div class="card-body text-center">
-                                        <h4>ESMALTE PINTOR</h4>
-                                        <p>Resistente con buen acabado y nivelación y alto brillo.</p>
-<<<<<<< HEAD
-                                        <p class="fw-bold fs-5">S/ 58.90</p>
-                                        <button type="button" class="btn bg-dark text-white fw-bold">Agregar</button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-6 col-lg-3 mb-3 mb-lg-0">
-                                <div class="card">
-=======
-                                        <a href="#" class="border border-black text-decoration-none py-1 px-2 text-black rounded">Precio: S/ 65</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-3">
-                                <div class="card border border-secondary py-2">
->>>>>>> 6caf94dc6ef3d1fd52c8cf8c96bb28bc7dc83b69
-                                    <img src="assets/oleomate.png" class="card-img-top position-relative" alt="..." />
-                                    <div class="card-body text-center">
-                                        <h4>ÓLEOMATE</h4>
-                                        <p>Alta resistencia en ambientes de grasa y humedad.</p>
-<<<<<<< HEAD
-                                        <p class="fw-bold fs-5">S/ 58.90</p>
-                                        <button type="button" class="btn bg-dark text-white fw-bold">Agregar</button>
-=======
-                                        <a href="#" class="border border-black text-decoration-none py-1 px-2 text-black rounded">Precio: S/ 67</a>
->>>>>>> 6caf94dc6ef3d1fd52c8cf8c96bb28bc7dc83b69
-
-                                    </div>
-                                </div>
-                            </div>
-<<<<<<< HEAD
-                            <div class="col-6 col-lg-3">
-                                <div class="card">
-=======
-                            <div class="col-3">
-                                <div class="card border border-secondary py-2">
->>>>>>> 6caf94dc6ef3d1fd52c8cf8c96bb28bc7dc83b69
-                                    <img src="assets/oleomatepato.png" class="card-img-top position-relative"
-                                        alt="..." />
-                                    <div class="card-body text-center">
-                                        <h4>ÓLEOMATE PATO</h4>
-                                        <p>Buena resistencia, humedad, mayor rendimiento y resistente al
-                                            lavado.</p>
-<<<<<<< HEAD
-                                        <p class="fw-bold fs-5">S/ 58.90</p>
-                                        <button type="button" class="btn bg-dark text-white fw-bold">Agregar</button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-6 col-lg-3">
-                                <div class="card">
-=======
-                                            <a href="#" class="border border-black text-decoration-none py-1 px-2 text-black rounded">Precio: S/ 57</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-3">
-                                <div class="card border border-secondary py-2">
->>>>>>> 6caf94dc6ef3d1fd52c8cf8c96bb28bc7dc83b69
-                                    <img src="assets/anticorrosivo.png" class="card-img-top position-relative"
-                                        alt="..." />
-                                    <div class="card-body text-center">
-                                        <h4>ANTICORROSIVO</h4>
-                                        <p>Protege más las superficies de acero contra la corrosión. Fácil aplicación y
-                                            repintado.</p>
-<<<<<<< HEAD
-                                        <p class="fw-bold fs-5">S/ 58.90</p>
-                                        <button type="button" class="btn bg-dark text-white fw-bold">Agregar</button>
-=======
-                                            <a href="#" class="border border-black text-decoration-none py-1 px-2 text-black rounded">Precio: S/ 65.50</a>
->>>>>>> 6caf94dc6ef3d1fd52c8cf8c96bb28bc7dc83b69
-                                    </div>
-                                </div>
-                            </div>
+                <div class="col-6 col-lg-3 mb-3 mb-lg-0">
+                    <div class="card border border-secondary py-2">
+                        <img src="assets/oleomate.png" alt="">
+                        <div class="card-body text-center">
+                            <h4>ÓLEOMATE</h4>
+                            <p>Alta resistencia en ambientes de grasa y humedad.</p>
+                            <p class="fw-bold fs-5">S/ 58.90</p>
+                            <button type="button" class="btn bg-dark text-white fw-bold">Agregar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3 mb-3 mb-lg-0">
+                    <div class="card border border-secondary py-2">
+                        <img src="assets/oleomatepato.png" alt="">
+                        <div class="card-body text-center">
+                            <h4>ÓLEOMATE PATO</h4>
+                            <p>Buena resistencia, rendimiento y resistente al lavado.</p>
+                            <p class="fw-bold fs-5">S/ 58.90</p>
+                            <button type="button" class="btn bg-dark text-white fw-bold">Agregar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3 mb-3 mb-lg-0">
+                    <div class="card border border-secondary py-2">
+                        <img src="assets/anticorrosivo.png" alt="">
+                        <div class="card-body text-center">
+                            <h4>ANTICORROSIVO</h4>
+                            <p>Protege las superficies de acero. Fácil aplicación.</p>
+                            <p class="fw-bold fs-5">S/ 58.90</p>
+                            <button type="button" class="btn bg-dark text-white fw-bold">Agregar</button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+      </div>
     </div>
+  </div>
+</div> 
 
-    <!-- MODAL CARD DILUYENTES-->
-    <div class="modal" id="diluyentes">
-        <div class="modal-dialog modal-xl ">
-            <div class="modal-content">
-                <div class="modal-header px-4">
-                    <h2 class="modal-title ">DILUYENTES</h2>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body py-4 px-2 px-lg-5">
-                    <div class="container">
-                        <div class="row justify-content-center">
-<<<<<<< HEAD
-                            <div class="col-6 col-lg-3">
-                                <div class="card">
-=======
-                            <div class="col-3">
-                                <div class="card border border-secondary py-2">
->>>>>>> 6caf94dc6ef3d1fd52c8cf8c96bb28bc7dc83b69
-                                    <img src="assets/diluyente.png" class="card-img-top position-relative" alt="..." />
-                                    <div class="card-body text-center">
-                                        <h4>THINNER ACRILICO</h4>
-                                        <p>Complemento perfecto que asegura el buen resultado de tu proyecto.</p>
-<<<<<<< HEAD
-                                        <p class="fw-bold fs-5">S/ 58.90</p>
-                                        <button type="button" class="btn bg-dark text-white fw-bold">Agregar</button>
-=======
-                                        <a href="#" class="border border-black text-decoration-none py-1 px-2 text-black rounded">Precio: S/ 54.90</a>
->>>>>>> 6caf94dc6ef3d1fd52c8cf8c96bb28bc7dc83b69
-                                    </div>
-                                </div>
-                            </div>
-
+       <!-- MODAL CARD DILUYENTES-->
+<div class="modal" tabindex="-1" id="diluyentes">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+      <div class="modal-header px-4">
+        <h5 class="modal-title">DILUYENTES</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-6 col-lg-3 mb-3 mb-lg-0">
+                    <div class="card border border-secondary py-2">
+                        <img src="assets/diluyente.png" alt="">
+                        <div class="card-body text-center">
+                            <h4>THINNER ACRILICO</h4>
+                            <p>Complemento perfecto que asegura el buen resultado de tu proyecto.</p>
+                            <p class="fw-bold fs-5">S/ 58.90</p>
+                            <button type="button" class="btn bg-dark text-white fw-bold">Agregar</button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+      </div>
     </div>
+  </div>
+</div> 
 
-    <!-- MODAL CARD AUTOMOTRIZ-->
-    <div class="modal" id="pintura-automotriz">
-        <div class="modal-dialog modal-xl ">
-            <div class="modal-content">
-                <div class="modal-header px-4">
-                    <h2 class="modal-title">PINTURA AUTOMOTRIZ</h2>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+       <!-- MODAL CARD AUTOMOTRIZ-->
+<div class="modal" tabindex="-1" id="pintura-automotriz">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+      <div class="modal-header px-4">
+        <h5 class="modal-title">PINTURA AUTOMOTRIZ</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 col-lg-3 mb-3 mb-lg-0">
+                    <div class="card border border-secondary py-2">
+                        <img src="assets/imprimantepoliuretano.png" alt="">
+                        <div class="card-body text-center">
+                            <h4>IMPRIMANTE POLIURETANO</h4>
+                            <p>Base para superficies en el proceso de repintado.</p>
+                            <p class="fw-bold fs-5">S/ 58.90</p>
+                            <button type="button" class="btn bg-dark text-white fw-bold">Agregar</button>
+                        </div>
+                    </div>
                 </div>
-                <div class="modal-body py-4 px-2 px-lg-5">
-                    <div class="container">
-                        <div class="row">
-<<<<<<< HEAD
-                            <div class="col-6 col-lg-3 mb-3 mb-lg-0">
-                                <div class="card">
-=======
-                            <div class="col-3">
-                                <div class="card border border-secondary py-2">
->>>>>>> 6caf94dc6ef3d1fd52c8cf8c96bb28bc7dc83b69
-                                    <img src="assets/imprimantepoliuretano.png" class="card-img-top position-relative"
-                                        alt="..." />
-                                    <div class="card-body text-center">
-                                        <h4>IMPRIMANTE POLIURETANO</h4>
-                                        <p>Base para superficies en el proceso de repintado.</p>
-<<<<<<< HEAD
-                                        <p class="fw-bold fs-5">S/ 58.90</p>
-                                        <button type="button" class="btn bg-dark text-white fw-bold">Agregar</button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-6 col-lg-3 mb-3 mb-lg-0">
-                                <div class="card">
-=======
-                                        <a href="#" class="border border-black text-decoration-none py-1 px-2 text-black rounded">Precio: S/ 37.90</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-3">
-                                <div class="card border border-secondary py-2">
->>>>>>> 6caf94dc6ef3d1fd52c8cf8c96bb28bc7dc83b69
-                                    <img src="assets/barniz.png" class="card-img-top position-relative" alt="..." />
-                                    <div class="card-body text-center">
-                                        <h4>BARNIZ POLIURETANO</h4>
-                                        <p>Barniz de acabado brillante para sistema Bicapa.</p>
-<<<<<<< HEAD
-                                        <p class="fw-bold fs-5">S/ 58.90</p>
-                                        <button type="button" class="btn bg-dark text-white fw-bold">Agregar</button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-6 col-lg-3">
-                                <div class="card">
-=======
-                                        <a href="#" class="border border-black text-decoration-none py-1 px-2 text-black rounded">Precio: S/ 39.90</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-3">
-                                <div class="card border border-secondary py-2">
->>>>>>> 6caf94dc6ef3d1fd52c8cf8c96bb28bc7dc83b69
-                                    <img src="assets/baseantigravillla.png" class="card-img-top position-relative"
-                                        alt="..." />
-                                    <div class="card-body text-center">
-                                        <h4>BASE <br> ANTIGRAVILLA</h4>
-                                        <p>Base para rellenar la parte baja de la carrocería.</p>
-<<<<<<< HEAD
-                                        <p class="fw-bold fs-5">S/ 58.90</p>
-                                        <button type="button" class="btn bg-dark text-white fw-bold">Agregar</button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-6 col-lg-3">
-                                <div class="card">
-=======
-                                        <a href="#" class="border border-black text-decoration-none py-1 px-2 text-black rounded">Precio: S/ 45.90</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-3">
-                                <div class="card border border-secondary py-2">
->>>>>>> 6caf94dc6ef3d1fd52c8cf8c96bb28bc7dc83b69
-                                    <img src="assets/catalizador.png" class="card-img-top position-relative"
-                                        alt="..." />
-                                    <div class="card-body text-center">
-                                        <h4>CATALIZADOR DE POLIURETANO</h4>
-                                        <p>Activador de resina poliuretana primer.</p>
-<<<<<<< HEAD
-                                        <p class="fw-bold fs-5">S/ 58.90</p>
-                                        <button type="button" class="btn bg-dark text-white fw-bold">Agregar</button>
-=======
-                                        <a href="#" class="border border-black text-decoration-none py-1 px-2 text-black rounded">Precio: S/ 49.90</a>
->>>>>>> 6caf94dc6ef3d1fd52c8cf8c96bb28bc7dc83b69
-                                    </div>
-                                </div>
-                            </div>
+                <div class="col-6 col-lg-3 mb-3 mb-lg-0">
+                    <div class="card border border-secondary py-2">
+                        <img src="assets/barniz.png" alt="">
+                        <div class="card-body text-center">
+                            <h4>BARNIZ <br> POLIURETANO</h4>
+                            <p>Barniz de acabado brillante para sistema Bicapa..</p>
+                            <p class="fw-bold fs-5">S/ 58.90</p>
+                            <button type="button" class="btn bg-dark text-white fw-bold">Agregar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3 mb-3 mb-lg-0">
+                    <div class="card border border-secondary py-2">
+                        <img src="assets/baseantigravillla.png" alt="">
+                        <div class="card-body text-center">
+                            <h4>BASE <br> ANTIGRAVILLA</h4>
+                            <p>Base para rellenar la parte baja de la carrocería.</p>
+                            <p class="fw-bold fs-5">S/ 58.90</p>
+                            <button type="button" class="btn bg-dark text-white fw-bold">Agregar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3 mb-3 mb-lg-0">
+                    <div class="card border border-secondary py-2">
+                        <img src="assets/catalizador.png" alt="">
+                        <div class="card-body text-center">
+                            <h4>CATALIZADOR DE POLIURETANO</h4>
+                            <p>Activador de resina poliuretana primer.</p>
+                            <p class="fw-bold fs-5">S/ 58.90</p>
+                            <button type="button" class="btn bg-dark text-white fw-bold">Agregar</button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+      </div>
     </div>
+  </div>
+</div> 
 
-    <!-- MODAL CARD TRANSITO-->
-    <div class="modal" id="pintura-transito">
-        <div class="modal-dialog modal-xl ">
-            <div class="modal-content">
-                <div class="modal-header px-4">
-                    <h2 class="modal-title ">PINTURA DE TRANSITO</h2>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body py-4 px-2 px-lg-5">
-                    <div class="container">
-                        <div class="row justify-content-center">
-<<<<<<< HEAD
-                            <div class="col-6 col-lg-3">
-                                <div class="card">
-=======
-                            <div class="col-3">
-                                <div class="card border border-secondary py-2">
->>>>>>> 6caf94dc6ef3d1fd52c8cf8c96bb28bc7dc83b69
-                                    <img src="assets/pinturatransito.png" class="card-img-top position-relative"
-                                        alt="..." />
-                                    <div class="card-body text-center">
-                                        <h4>SATINADO</h4>
-                                        <p>Pintura de acabado brillante con un acabado terso.</p>
-<<<<<<< HEAD
-                                        <p class="fw-bold fs-5">S/ 58.90</p>
-                                        <button type="button" class="btn bg-dark text-white fw-bold">Agregar</button>
-=======
-                                        <a href="#" class="border border-black text-decoration-none py-1 px-2 text-black rounded">Precio: S/ 89.90</a>
->>>>>>> 6caf94dc6ef3d1fd52c8cf8c96bb28bc7dc83b69
-                                    </div>
-                                </div>
-                            </div>
+       <!-- MODAL CARD TRANSITO-->
+<div class="modal" tabindex="-1" id="pintura-transito">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+      <div class="modal-header px-4">
+        <h5 class="modal-title">PINTURA DE TRANSITO</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-6 col-lg-3 mb-3 mb-lg-0">
+                    <div class="card border border-secondary py-2">
+                        <img src="assets/pinturatransito.png" alt="">
+                        <div class="card-body text-center">
+                            <h4>SATINADO</h4>
+                            <p>Pintura de acabado brillante con un acabado terso.</p>
+                            <p class="fw-bold fs-5">S/ 58.90</p>
+                            <button type="button" class="btn bg-dark text-white fw-bold">Agregar</button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+      </div>
     </div>
+  </div>
+</div> 
 
-    <!-- <div class="listProduct"></div>
-    <div class="cartTab">
-        <h1>Shopping Cart</h1>
-        <div class="listCart">
-            <div class="item">
-                <div class="image">
-                    <img src="assets/imprimante.png" alt="">
-                </div>
-                <div class="name">
-                    Name
-                </div>
-                <div class="totalPrice">
-                    $100
-                </div>
-                <div class="quantity">
-                    <span class="minus">-</span>
-                    <span>1</span>
-                    <span class="plus">+</span>
-                </div>
-            </div>
-        </div>
-        <div class="btn">
-            <button class="close">Cerrar</button>
-            <button class="checkOut">Check Out</button>
-        </div>
-    </div> -->
-
-    <div class="cart">
+<!-- CART PRODUCT -->
+<div class="cart">
         <h2 class="cart-title">Your Cart</h2>
         <!-- content -->
         <div class="cart-content">
             <div class="cart-content">
                 <div class="cart-box">
-                    <img src="img/product2.jpg" alt="" class="cart-img">
+                    <img src="assets/imprimante.png" alt="" class="cart-img">
                     <div class="detail-box">
                         <div class="cart-product-title">Earbuds</div>
                         <div class="cart-price">$25.04</div>
@@ -670,13 +470,12 @@
         <button type="button" class="btn-buy">Buy Now</button>
         <!-- Cart Close -->
         <i class="ri-close-line" id="close-cart"></i>
+</div>
 
-    </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
-    <script src="main.js"></script>
+<script src="main.js"></script>
 </body>
 
 </html>
