@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Ubicación de la tienda</title>
+    <style>
+        .shadowContainer {
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+            padding: 2rem;
+        }
+
+        .map {
+            overflow: hidden;
+            width: 100%;
+            height: 400px;
+            margin-top: 2rem;
+            border: 2px solid #000;
+        }
+
+        @media (width>768px) {
+            .map {
+                margin-top: 0;
+                width: 100%;
+                height: 600px;
+            }
+        }
+
+        .scroll {
+            height: 70vh;
+            overflow-y: scroll;
+        }
+
+        h5 {
+            font-size: 18px;
+            font-weight: normal;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <header>
+        <nav class="navbar navbar-expand-lg bg-light shadow fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="/">ProPaint Solutions</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-4">
+                        <li class="nav-item">
+                            <a class="nav-link fw-semibold" href="/">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-semibold" href="/index.html#servicios">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-semibold" href="/product.html">Productos </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-semibold" href="/nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-semibold" href="contact.html">Contactos</a>
+                        </li>
+                    </ul>
+                    <div class="d-flex align-items-center gap-4">
+                        <div class="position-relative">
+                            <a href="#" class="text-decoration-none fs-3 text-black" id="cart-icon"><i
+                                    class="ri-shopping-cart-2-line"></i></a>
+                            <!-- <span class="count">0</span> -->
+                        </div>
+                        <button type="button" class="btn bg-dark text-white fw-semibold" data-bs-toggle="modal"
+                            data-bs-target="#mi-modal">
+                            Iniciar Sesion
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- SECTION UBICACIÓN -->
+    <section class="section" id="contact">
+        <div class="container mt-5">
+            <div class="row shadowContainer">
+                <div class="col-lg-5 scroll">
+                    <div class="d-flex flex-column mb-4">
+                        <h2 class="mb-4">¡Busca tu local más cercano!</h2>
+                        <p>
+                            Ingresa tu dirección para mostrarte los locales más cercanos
+                        </p>
+                        <button type="button" class="btn bg-body-secondary" data-bs-toggle="modal"
+                            data-bs-target="#destino-modal">
+                            Ingresa tu dirección
+                        </button>
+                    </div>
+
+                    <div class="d-flex flex-column gap-3">
+                        <div class="card">
+                            <div class="card-body p-1">
+                                <div class="accordion accordion-flush" id="accordionFlushExample">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed fs-4 p-2 fw-semibold"
+                                                type="button" data-bs-toggle="collapse"
+                                                data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                                aria-controls="flush-collapseOne">
+                                                San Isidro
+                                            </button>
+                                            <h5 class="py-3 px-4 mb-0">
+                                                Avenida Paseo de la República 3440, 15047, San Isidro,
+                                                Provincia de Lima, Perú
+                                            </h5>
+                                        </h2>
+
+                                        <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                            data-bs-parent="#accordionFlushExample">
+                                            <div class="accordion-body px-4 py-1">
+                                                <h5>+51 980023263</h5>
+                                                <h5>Lunes a Sabado, 08:30 - 20:30</h5>
+                                                <div class="d-flex mt-4 gap-3 mb-3">
+                                                    <button type="submit" class="btn btn-outline-secondary">
+                                                        Delivery Disponible
+                                                    </button>
+                                                    <button type="submit" class="btn btn-outline-secondary">
+                                                        Retiro Disponible
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-body p-1">
+                                <div class="accordion accordion-flush" id="accordionFlushExample">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed fs-4 p-2 fw-semibold"
+                                                type="button" data-bs-toggle="collapse"
+                                                data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                                aria-controls="flush-collapseTwo">
+                                                Breña
+                                            </button>
+                                            <h5 class="py-3 px-4 mb-0">
+                                                Avenida Alfonso Ugarte 1166, 15082, Lima, Provincia de
+                                                Lima, Perú
+                                            </h5>
+                                        </h2>
+
+                                        <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                            data-bs-parent="#accordionFlushExample">
+                                            <div class="accordion-body px-4 py-0">
+                                                <h5>+51 933678223</h5>
+                                                <h5>Lunes a Sabado, 09:30 - 21:15</h5>
+                                                <div class="d-flex mt-4 gap-3 mb-3">
+                                                    <button type="submit" class="btn btn-outline-secondary">
+                                                        Delivery Disponible
+                                                    </button>
+                                                    <button type="submit" class="btn btn-outline-secondary">
+                                                        Retiro Disponible
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-body p-1">
+                                <div class="accordion accordion-flush" id="accordionFlushExample">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed fs-4 p-2 fw-semibold"
+                                                type="button" data-bs-toggle="collapse"
+                                                data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                                aria-controls="flush-collapseThree">
+                                                Chorrillos
+                                            </button>
+                                            <h5 class="py-3 px-4 mb-0">
+                                                Jiron Teniente Carlos Jimenez Chavez 147, 15054, Lima,
+                                                Provincia de Lima, Perú
+                                            </h5>
+                                        </h2>
+
+                                        <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                            data-bs-parent="#accordionFlushExample">
+                                            <div class="accordion-body px-4 py-0">
+                                                <h5>+51 988829603</h5>
+                                                <h5>Lunes a Sabado, 08:00 - 18:30</h5>
+                                                <div class="d-flex mt-4 gap-3 mb-3">
+                                                    <button type="submit" class="btn btn-outline-secondary">
+                                                        Delivery Disponible
+                                                    </button>
+                                                    <button type="submit" class="btn btn-outline-secondary">
+                                                        Retiro Disponible
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-body p-1">
+                                <div class="accordion accordion-flush" id="accordionFlushExample">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed fs-4 p-2 fw-semibold"
+                                                type="button" data-bs-toggle="collapse"
+                                                data-bs-target="#flush-collapseFour" aria-expanded="false"
+                                                aria-controls="flush-collapseFour">
+                                                Plaza de Armas
+                                            </button>
+                                            <h5 class="py-3 px-4 mb-0">
+                                                Jirón de la Unión 364, 15001, Lima, Provincia de Lima,
+                                                Perú
+                                            </h5>
+                                        </h2>
+
+                                        <div id="flush-collapseFour" class="accordion-collapse collapse"
+                                            data-bs-parent="#accordionFlushExample">
+                                            <div class="accordion-body px-4 py-0">
+                                                <h5>+51 980023263</h5>
+                                                <h5>Lunes a Sabado, 08:30 - 21:00</h5>
+                                                <div class="d-flex mt-4 gap-3 mb-3">
+                                                    <button type="submit" class="btn btn-outline-secondary">
+                                                        Delivery Disponible
+                                                    </button>
+                                                    <button type="submit" class="btn btn-outline-secondary">
+                                                        Retiro Disponible
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-body p-1">
+                                <div class="accordion accordion-flush" id="accordionFlushExample">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed fs-4 p-2 fw-semibold"
+                                                type="button" data-bs-toggle="collapse"
+                                                data-bs-target="#flush-collapseFive" aria-expanded="false"
+                                                aria-controls="flush-collapseFive">
+                                                Miraflores
+                                            </button>
+                                            <h5 class="py-3 px-4 mb-0">
+                                                Avenida Defensores del Morro 330, 15064, Miraflores,
+                                                Provincia de Lima, Perú
+                                            </h5>
+                                        </h2>
+
+                                        <div id="flush-collapseFive" class="accordion-collapse collapse"
+                                            data-bs-parent="#accordionFlushExample">
+                                            <div class="accordion-body px-4 py-0">
+                                                <h5>+51 936233218</h5>
+                                                <h5>Lunes a Sabado, 08:00 - 21:30</h5>
+                                                <div class="d-flex mt-4 gap-3 mb-3">
+                                                    <button type="submit" class="btn btn-outline-secondary">
+                                                        Delivery Disponible
+                                                    </button>
+                                                    <button type="submit" class="btn btn-outline-secondary">
+                                                        Retiro Disponible
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-7">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31213.62708400005!2d-77.06134612568358!3d-12.0639178!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c9e9d5e1f913%3A0xea675ede2e150cb5!2sSU%20COLOR%20S.A.C.!5e0!3m2!1ses!2spe!4v1734206405375!5m2!1ses!2spe"
+                        class="map"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION CONTACTOS -->
+    <section style="background-color: #f4f6f5" id="contactos">
+        <div class="container">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-5">
+                    <h4 class="mb-0">SIÉNTETE LIBRE DE</h4>
+                    <h2 class="fw-bold">VISITARNOS</h2>
+                    <h5 class="my-5">Dirección:</h5>
+                    <p class="mb-0 fs-5">Jirón Manco Segundo 2350</p>
+                    <p class="mb-0 fs-5">Lince, 15073</p>
+                    <p class="mb-0 fs-5">Email: propaint@gmail.com</p>
+                    <p class="mb-0 fs-5">Phone: +51-123-456-987</p>
+                </div>
+                <div class="col-md-7 col-lg-5 mt-4 mt-md-0 form">
+                    <h4 class="mb-0">¿TIENE ALGUNA CONSULTA?</h4>
+                    <h2 class="fw-bold">ESCRIBANOS AQUÍ</h2>
+                    <form action="https://api.web3forms.com/submit" method="POST">
+                        <input type="hidden" name="access_key" value="404e8246-f571-4a16-9b92-832be0c1c556" />
+                        <div class="d-flex flex-column gap-2">
+                            Nombre:
+                            <input class="form-control" type="text" name="name" required />
+                            Correo Electrónico:
+                            <input class="form-control" type="email" name="email" required />
+                            Comentario:
+                            <textarea class="form-control" name="message" required></textarea>
+                            <input type="hidden" name="redirect" value="https://web3forms.com/success" />
+                            <button type="submit" class="btn bg-dark text-white mt-3">
+                                Enviar
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MODAL UBICACIÓN -->
+    <div class="modal" id="destino-modal">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">¿Dónde quieres tu pedido?</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body py-4 px-5">
+                    <form class="d-flex flex-column gap-3">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Distrito</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp" placeholder="Ej: Miraflores" />
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Ingresa una nueva dirección</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp" placeholder="Buscar dirección..." />
+                        </div>
+                    </form>
+                    <p class="text-center my-3">
+                        <small>O comparte tu ubicación</small>
+                    </p>
+                    <div class="d-flex flex-column">
+                        <button type="button" class="btn bg-black text-white" data-bs-dismiss="modal">
+                            Compartir ubicación
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SECTION FOOTER -->
+    <footer class="bg-black text-white pt-5 pb-3">
+        <div class="container">
+            <div class="row flex-column justify-content-center align-items-center">
+                <div class="col-10 col-lg-5 d-flex justify-content-center gap-4">
+                    <a class="text-decoration-none fs-3 text-white" href="#"><i class="ri-facebook-fill"></i></a>
+                    <a class="text-decoration-none fs-3 text-white" href="#"><i class="ri-instagram-line"></i></a>
+                    <a class="text-decoration-none fs-3 text-white" href="#"><i class="ri-tiktok-fill"></i></a>
+                    <a class="text-decoration-none fs-3 text-white" href="#"><i class="ri-twitter-x-line"></i></a>
+                </div>
+                <div class="col-10 col-lg-7 d-flex justify-content-center gap-4 mt-5">
+                    <ul class="text-center">
+                        <li class="list-inline-item px-1">
+                            <a class="text-decoration-none text-white" href="/">INICIO</a>
+                        </li>
+                        <li class="list-inline-item px-1">
+                            <a class="text-decoration-none text-white" href="#servicios">SERVICIOS</a>
+                        </li>
+                        <li class="list-inline-item px-1">
+                            <a class="text-decoration-none text-white" href="#servicios">PRODUCTOS</a>
+                        </li>
+                        <li class="list-inline-item px-1">
+                            <a class="text-decoration-none text-white" href="#nosotros">NOSOTROS</a>
+                        </li>
+                        <li class="list-inline-item px-1">
+                            <a class="text-decoration-none text-white" href="#contactos">CONTACTOS</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <hr />
+            <p class="text-center pt-3 text-secondary">
+                Copyright © 2024 ISIL | All rights reserved
+            </p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
